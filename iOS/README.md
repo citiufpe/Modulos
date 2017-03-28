@@ -12,17 +12,18 @@
         var dic = [String:Any]()
         let url = NSURL(string: urlString)
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
-          do {
-            if let data = data,
-            let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]{
-              dic = json
-              print(json)
-              callback(dic,error as NSError?)
-            }
-          } catch {
-              print("Error deserializing JSON: \(error)")
+            
+            do {
+                if let data = data,
+                    let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]{
+                    dic = json
+                    print(json)
+                    callback(dic,error as NSError?)
+                }
+            } catch {
+                print("Error deserializing JSON: \(error)")
             }
         }// finishing the http request
         task.resume()
-     }
+    }
     ```
