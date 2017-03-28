@@ -7,8 +7,9 @@
 **Git**: eduardolsneto2
 
   1. Get e Post Request:
-    GET:
-      ```func httpRequest(urlString:String, callback:@escaping (_ result: [String:Any], _ error: NSError?)->()){
+    i.GET:
+      ```
+      func httpRequest(urlString:String, callback:@escaping (_ result: [String:Any], _ error: NSError?)->()){
         var dic = [String:Any]()
         let url = NSURL(string: urlString)
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
@@ -25,4 +26,5 @@
             }
         }// finishing the http request
         task.resume()
-     }```
+     }
+     ```
