@@ -31,10 +31,10 @@
         
     Uso da função:
       
-      ```
-      let url = "url do request"
-      ServerCom.httpRequest(urlString: url ,callback: {(result:[String:Any], error: NSError?) -> () in
-      // Callback aqui
-      })
-      ```
+    ```
+    let url = "url do request"
+    ServerCom.httpRequest(urlString: url ,callback: {(result:[String:Any], error: NSError?) -> () in
+    // Callback aqui
+    })
+    ```
       
