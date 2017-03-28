@@ -1,10 +1,10 @@
 ## Modulos
 
-**Autor: Eduardo Leite
+**Autor**: Eduardo Leite
 
-**Contato: eduardo.leite@citi.ufpe.br
+**Contato**: eduardo.leite@citi.ufpe.br
 
-**Git: eduardolsneto2
+**Git**: eduardolsneto2
 
   1. Todo o código presente foi produzido com o intuito de ser Modular, Independente.
   
