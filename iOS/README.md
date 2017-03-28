@@ -33,6 +33,7 @@
       
       ```
       let url = "url do request"
+      
       ServerCom.httpRequest(urlString: url ,callback: {(result:[String:Any], error: NSError?) -> () in
         // Callback aqui
       })
