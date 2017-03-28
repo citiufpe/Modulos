@@ -9,8 +9,7 @@
   1. Get e Post Request:
   
       GET: Usando Closures (Recomendado)
-      
-      Adicione na sua Classe de comunicação com o servidor(nesse exemplo será 'ServerCom'):
+      	Adicione na sua Classe de comunicação com o servidor(nesse exemplo será 'ServerCom'):
       
       Class func httpRequest(urlString:String, callback:@escaping (_ result: [String:Any], _ error: NSError?)->()){
         let url = NSURL(string: urlString)
