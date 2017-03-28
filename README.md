@@ -10,4 +10,4 @@
   
   2. Qualquer framework necessario para que os modulos sejam ultilizados serão ditos, e aqueles mais complexos seão explicados como usar.
   
-  3. Todo o código estará em inglês.
+	3. Todo o código estará em inglês.
