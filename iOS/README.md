@@ -8,7 +8,7 @@
 
   1. Get e Post Request:
   
-      ```GET
+      GET:
       
       func httpRequest(urlString:String, callback:@escaping (_ result: [String:Any], _ error: NSError?)->()){
         var dic = [String:Any]()
@@ -28,5 +28,4 @@
         }// finishing the http request
         task.resume()
     }
-    ```
     
