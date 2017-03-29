@@ -8,7 +8,7 @@
 
 1. Get e Post Request:
 
-    GET: Usando Closures (Recomendado)
+    __GET__: Usando Closures (Recomendado)
 
     Adicione na sua Classe de comunicação com o servidor(nesse exemplo será 'ServerCom'):
 
@@ -37,5 +37,28 @@
         // Callback aqui
     })
     ```
-    
     
+    __POST__ (by [rvlb-19](https://github.com/rvlb-19)):
+    
+    ```swift
+    // Create an array of URLQueryItem that represent the key-value pairs of
+    // the query.
+    var queryItems = [URLQueryItem]()
+    queryItems.append(URLQueryItem(name: "key", value: "value"))
+
+    // Build the query with the data previously set
+    var query = NSURLComponents()
+    query.queryItems = queryItems
+
+    // Create an URLRequest using a previously defined url and set its method
+    // as POST
+    var request = URLRequest(url: url)
+    request.method = "POST"
+    // Set the request body as the data set in query
+    request.httpBody = query.query!.data(using: .utf8)
+
+    // Send request (you can also put this inside a var if you wish)
+    URLSession.shared.dataTask(with: request) { (data, response, error) in
+        // Do stuff the same way as in GET
+    }.resume()
+    ```
