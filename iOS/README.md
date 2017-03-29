@@ -41,6 +41,7 @@
     POST (Contribuição de [rvlb-19](https://github.com/rvlb-19))
     
     ```swift
+    
     // Create an array of URLQueryItem that represent the key-value pairs of
     // the query.
     var queryItems = [URLQueryItem]()
@@ -61,4 +62,5 @@
     URLSession.shared.dataTask(with: request) { (data, response, error) in
         // Do stuff the same way as in GET
     }.resume()
+    
     ```
