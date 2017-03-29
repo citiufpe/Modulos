@@ -34,8 +34,9 @@
     ```swift
     let url = "url do request"
     ServerCom.httpRequest(urlString:url,callback: {(result:[String:Any], error: NSError?) -> () in
-        // Callback aqui
-    })
+        // o retorno do request está em result
+        // faça o que quizer com result aqui
+    })
     ```
     
     __POST__ (by [rvlb-19](https://github.com/rvlb-19)):
