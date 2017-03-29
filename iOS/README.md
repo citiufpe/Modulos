@@ -34,8 +34,7 @@
     ```swift
     let url = "url do request"
     ServerCom.httpRequest(urlString:url,callback: {(result:[String:Any], error: NSError?) -> () in
-    // o retorno do request está em result
-    // faça o que quizer com result aqui
+      //faça o que quizer com o retorn da request (result)
     })
     ```
     
