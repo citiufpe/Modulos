@@ -62,3 +62,15 @@
         // Do stuff the same way as in GET
     }.resume()
     ```
+    
+2. UISearchBar
+    
+    __TableView__:
+    
+    ```swift
+    // Criando a searchbar
+    searchbar = UISearchBar.init(frame: CGRect.init(x: 0.0, y: 0.0, width: self.view.frame.width, height: 44.0))
+    searchbar.placeholder = "Buscar"
+    // Adicionando a searchbar ao topo da tableView
+    myTableView.tableheaderView = searchbar
+    ```
