@@ -69,6 +69,8 @@
     request.setValue("valor", forHTTPHeaderField: "Nome da header")
     ```
     
+    para algo mais complexo recomendo usar [Alamofire](https://github.com/Alamofire/Alamofire).
+    
 2. UISearchBar
     
     __TableView__:
