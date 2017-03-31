@@ -63,6 +63,12 @@
     }.resume()
     ```
     
+    caso o post necessite de header incremente:
+    
+    ```swift
+    request.setValue("valor", forHTTPHeaderField: "Nome da header")
+    ```
+    
 2. UISearchBar
     
     __TableView__:
