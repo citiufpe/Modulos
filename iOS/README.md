@@ -74,3 +74,9 @@
     // Adicionando a searchbar ao topo da tableView
     myTableView.tableheaderView = searchbar
     ```
+    
+    para adicionar como offset(aparecer apenas quando o usuario der scroll down):
+    
+    ```swift
+    myTableView.setContentOffset(CGPoint.init(x: 0, y: 44), animated: true)
+    ```
