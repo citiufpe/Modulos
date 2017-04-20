@@ -88,3 +88,16 @@
     ```swift
     myTableView.setContentOffset(CGPoint.init(x: 0, y: 44), animated: true)
     ```
+   
+3. Storyboard
+
+    __Mudar de Storyboard__:
+    
+    ```swift
+    //inicia a storyboard
+    let storyboard = UIStoryboard(name: "Nome da Storyboard", bundle: nil)
+    //inicia a view controller inicial da storyboard
+    let vc = storyboard.instantiateInitialViewController()
+    //adiciona a view controller a navigation controller
+    self.navigationController?.pushViewController(vc!, animated: true)
+    ```
