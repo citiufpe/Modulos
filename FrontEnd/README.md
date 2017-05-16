@@ -1,7 +1,23 @@
-## Modulos FrontEnd
+## Módulos de Front-end
 
-**Autor**: Eduardo Leite
+**Autora:** Vanessa Barreiros (vanessa.barreiros@citi.org.br)
 
-**Contato**: eduardo.leite@citi.ufpe.br
+Estrutura:
+* Navbar
+* Footer
 
-**Git**: eduardolsneto2
+Elementos:
+* Botões
+* Carousel
+
+---
+
+### Estrutura
+
+> Navbar
+
+Lorem.
+
+### Elementos
+
+Ipsum.
